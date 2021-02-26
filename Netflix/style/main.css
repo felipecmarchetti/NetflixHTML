@@ -1,0 +1,145 @@
+:root{
+    --vermelho:#e50914;
+    --preta: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base */
+
+body{
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+.container{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 200ms linear;
+    padding: 0 5px;
+}
+
+.scrolled{
+    background-color: black;
+    transition: background-color 200ms linear;
+}
+
+header .logo{
+    margin-left: 35px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: rgb(201, 0, 0);
+}
+
+/* Inicio / Filme Principal */
+
+.filme-principal{
+    font-size: 14px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/capa-house.jpg');
+    height: 600px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.650);
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .5s ease all;
+}
+
+.botao:hover{
+    background-color: rgba(255, 0, 0, 0.61);
+    color: white;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    width: 100%;
+}
+
+.container i{
+    margin-left: 15px;
+}
+
+.filme-principal .container2{
+    width: 80%;
+    margin-left: 40px;
+}
+
+.box-filme{
+    height: 20%;
+    width: 20%;
+    display: flex;
+    padding: 10px;
+}
+
+.carrossel-filmes{
+    margin-top: 5px;
+}
+
+.selecao-topo{
+    list-style: none;
+    display: flex;
+}
+
+.selecao-topo a{
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.selecao-topo a:hover{
+    color: var(--vermelho);
+    /*font-weight: bold;*/
+}
+
+.itens-direita{
+    justify-content: center;
+    text-align: right;
+    
+}
+
+.itens-direita p{
+    font-family: 'Arial', Helvetica, sans-serif;
+}
