@@ -1,0 +1,46 @@
+/** {
+    box-sizing: border-box;
+  }*/
+    
+#myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    padding: 30px 0px;
+  }
+  
+#myUL li a {
+    border: 1px solid #141414;
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #141414;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+
+  }
+  
+  #myUL li a:hover:not(.header) {
+    background-color: rgb(255, 0, 0);
+  }
+
+.caixa-busca {
+    padding: 80px 40px;
+}
+
+.busca{
+    height: 50px;
+    width: 600px;
+    border: 1px solid #dedede;
+    background-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+img{
+  width: 20%;
+}
